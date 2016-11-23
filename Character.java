@@ -28,6 +28,11 @@ public abstract class Character {
 	return _def;
     }
 
+    //accessor for _health
+    public int getHealth(){
+	return _health; 
+    }
+
     //lowerHP
     //pre: takes an int
     //post: lowers HP by the int
