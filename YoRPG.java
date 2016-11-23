@@ -122,7 +122,8 @@ public class YoRPG
     public boolean playTurn()
     {
 	int i = 1;
-	int d1, d2;
+	String d1 = "";
+	String d2 = "";
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )//chance to have a fight
 	    System.out.println( "\nNothing to see here. Move along!" );
@@ -148,8 +149,8 @@ public class YoRPG
 		else
 		    pat.normalize();
 
-		d1 = pat.attack( smaug );
-		d2 = smaug.attack( pat );
+		d1 += pat.attack( smaug );
+		d2 += smaug.attack( pat );
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
