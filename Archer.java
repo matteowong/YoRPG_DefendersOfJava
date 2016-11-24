@@ -27,12 +27,18 @@ class Archer extends Character{
 	return "\tArcher: 107 health, 90 strength, 40 defense, 0.6 attack rating";
     }
 
-     public String attack(Character a){
+    public String attack(Character a){
+	String retStr = "";
 	int d= (int)(_str * _atkRating) - a.getDefense();
-	if (Math.random()<0.5) {d=d*2;}
+	if (Math.random()<0.5){
+	    d = d*2;
+	    retStr += "damage twice, each time hitting for " + d/2;
+	}
+	else {
+	    retStr += d;
+	}
 	if (d<0) {d=0;}
 	a.lowerHP(d);
-	String retStr="damage twice, each time hitting for "+d/2;
 	return retStr;
     }
 
