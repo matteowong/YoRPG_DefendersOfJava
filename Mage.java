@@ -21,6 +21,7 @@ class Mage extends Character{
 	if (_recharge){
 	    _str = 0;
 	    System.out.println("Mage is recharging");
+	    _recharge = false;
 	}
     }
     

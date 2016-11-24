@@ -125,6 +125,7 @@ public class YoRPG
 	String d1 = "";
 	String d2 = "";
 
+		
 	if ( Math.random() >= ( difficulty / 3.0 ) )//chance to have a fight
 	    System.out.println( "\nNothing to see here. Move along!" );
 	else {
@@ -133,6 +134,8 @@ public class YoRPG
 	    smaug = new Monster();
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
+
+		System.out.println( "\n" + "=========================================");
 
 		// Give user the option of using a special attack:
 		// If you land a hit, you incur greater damage,
@@ -151,8 +154,6 @@ public class YoRPG
 
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
-
-		System.out.println( "\n" + "=========================================");
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
