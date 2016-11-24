@@ -43,11 +43,12 @@ public abstract class Character {
     //attack
     //pre: takes a Character
     //post: lowers Character's health by a certain amount and returns the damage dealt
-    public int attack(Character a){
+    public String attack(Character a){
 	int d= (int)(_str * _atkRating) - a.getDefense();
 	if (d<0) {d=0;}
 	a.lowerHP(d);
-	return d;
+	String retStr = "" + d;
+	return retStr;
     }
 
     

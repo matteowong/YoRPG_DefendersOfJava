@@ -14,23 +14,18 @@ class Archer extends Character{
     }
 
     public void specialize(){
-	_str=107;
+	_str=90;
 	_def=20;
     }
 
     public void normalize(){
-	_str=90;
+	_str=60;
 	_def=40;
     }
 
     public static String about(){
 	return "\tArcher: 107 health, 90 strength, 40 defense, 0.6 attack rating";
     }
-
-
-
-
-
 
      public String attack(Character a){
 	int d= (int)(_str * _atkRating) - a.getDefense();

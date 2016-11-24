@@ -149,8 +149,10 @@ public class YoRPG
 		else
 		    pat.normalize();
 
-		d1 += pat.attack( smaug );
-		d2 += smaug.attack( pat );
+		d1 = pat.attack( smaug );
+		d2 = smaug.attack( pat );
+
+		System.out.println( "\n" + "=========================================");
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
@@ -159,6 +161,7 @@ public class YoRPG
 				    " for " + d2 + " points of damage.");
 
 		System.out.println( "\n" + "Your health is: " + pat.getHealth() );
+		System.out.println( "\n" + "Ye Olde Monster's health is: " + smaug.getHealth());
 	    }//end while
 
 	    //option 1: you & the monster perish
