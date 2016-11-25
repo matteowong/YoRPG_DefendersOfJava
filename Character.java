@@ -58,11 +58,11 @@ public abstract class Character {
     public abstract void normalize();
 
     public static String about(){
-	String retStr= "\tWarrior: 125 health, 100 strength, 40 defense, 0.4 attack rating\n";
-	retStr+="\tMage: 100 health, 95 strength, 30 defense, 0.7 attack rating\n";
-	retStr+="\tTank: 150 health, 80 strength, 50 defense, 0.3 attack rating\n";
-	retStr+="\tRogue: 90 health, 80 strength, 35 defense, 0.5 attack rating\n";
-	retStr+="\tArcher: 107 health, 90 strength, 40 defense, 0.6 attack rating\n";
+	String retStr= "\t1. Warrior: 125 health, 100 strength, 40 defense, 0.4 attack rating\n";
+	retStr+="\t2. Mage: 100 health, 95 strength, 30 defense, 0.7 attack rating\n";
+	retStr+="\t3. Tank: 150 health, 80 strength, 50 defense, 0.3 attack rating\n";
+	retStr+="\t4. Rogue: 90 health, 80 strength, 35 defense, 0.5 attack rating\n";
+	retStr+="\t5. Archer: 107 health, 90 strength, 40 defense, 0.6 attack rating\n";
 	return retStr;
 	}
 

@@ -81,7 +81,7 @@ public class YoRPG
 	catch ( IOException e ) { }
 
 	s = "Fearless player, what class doth thy picketh? (Pick a class): \n";
-	s += "1. Warrior\n2. Mage\n3. Tank\n4. Rogue\n5. Archer\n";
+	s += Character.about();
 	s += "Selection: ";
 	System.out.print( s );
 
